@@ -3,33 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <title>pricising</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Oswald:wght@300&family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
     />
-
-    <title>Pricing component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <section class="container">
+      <div class="up">
+        <p>Our Pricing</p>
+
+        <div class="toggle">
+          <div class="naming"><p>Annually</p></div>
+          <div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="naming"><p>Monthly</p></div>
+        </div>
+      </div>
+      <div class="down">
+        <div class="card card-1">
+          <div><p>Basic</p></div>
+          <div class="price-item">
+            <div class="dollar"><p>$</p></div>
+            <div class="price"><p>19.99</p></div>
+          </div>
+          <div class="lines"><p>500 GB Storage</p></div>
+          <div class="lines"><p>2 Users Allowed</p></div>
+          <div class="lines"><p>Send up to 3 GB</p></div>
+          <div class="lines">
+            <button class="btn" type="button">Learn More</button>
+          </div>
+        </div>
+        <div class="card card-2">
+          <div><p>Professional</p></div>
+          <div class="price-item">
+            <div class="dollar"><p>$</p></div>
+            <div class="price"><p>24.99</p></div>
+          </div>
+          <div class="lines"><p>1 TB Storage</p></div>
+          <div class="lines"><p>5 Users Allowed</p></div>
+          <div class="lines"><p>Send up to 10 GB</p></div>
+          <div class="lines">
+            <button class="btn" type="button">Learn More</button>
+          </div>
+        </div>
+        <div class="card card-3">
+          <div><p>Master</p></div>
+          <div class="price-item">
+            <div class="dollar"><p>$</p></div>
+            <div class="price"><p>39.99</p></div>
+          </div>
+          <div class="lines"><p>2 TB Storage</p></div>
+          <div class="lines"><p>10 Users Allowed</p></div>
+          <div class="lines"><p>Send up to 20 GB</p></div>
+          <div class="lines">
+            <button class="btn" type="button">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
