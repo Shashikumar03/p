@@ -68,6 +68,7 @@
   justify-content: center;
   gap: 20px;
   color: black;
+  z-index: 2;
 }
 .card-1,
 .card-3 {
@@ -77,6 +78,7 @@
   justify-content: center;
   gap: 20px;
   color: black;
+  z-index: 2;
 }
 
 /* toggle */
@@ -140,13 +142,12 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
 /* toggle button end */
+
 .up > p {
   font-size: 30px;
 }
 .toggle {
-  /* border: 2px solid black; */
   width: 220px;
   height: 60px;
   display: flex;
